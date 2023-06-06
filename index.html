@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Hans Doderlein Portfolio</h1>
+
+      <!-- Navbar to link sections of the app -->
+      <nav class="navbar">
+        <ul class="navbar-links">
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#myApps">My Apps</a></li>
+          <li><a href="#contactSection">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Section with perosnal information about myself -->
+    <section class="about-me" id="about-me">
+      <h2>About Me</h2>
+
+      <div class="aboutMeContent">
+        <p>My name is Hans Doderlein.</p>
+        <p>
+          I spent my adolescent years in South Florida where I began my first
+          job in the service industry. A job that I continue working after hours
+          to this day.
+        </p>
+        <p>
+          After completing high school, I attended the University of Central
+          Florida, where I recieved my B.A. in Biomedical Sciences.
+        </p>
+        <p>
+          I immediately began working in the ER department of a nearby hosiptal.
+          As I began to shadow surgeons, doctors, nurses, etc., I realized that
+          this profession was not for me.
+        </p>
+        <p>
+          I do still enjoy medicine and will always cherish the knowledge and
+          experiences I gained in my two years in the ER.
+        </p>
+        <p>
+          After that I began my brief career in teaching. I worked as a teacher
+          for two years teaching grades 6-12 Math, Biology, and Chemistry.
+        </p>
+        <p>
+          It was towards the end of my last year teaching that I realized I
+          wanted to go into coding.
+        </p>
+        <p>I began the coding bootcamp at UNC.</p>
+      </div>
+
+      <div class="profileimg">
+        <img src="./images/ProfilePic.jpg" alt="Pofile Picture" />
+      </div>
+    </section>
+
+    <!-- Section containing all of my deployed apps, with sections acting as links to those pages -->
+
+    <main class="myApps" id="myApps">
+      <h2>My Web Applications</h2>
+
+      <a
+        href="https://hans-doderlein.github.io/Prework-Study-Guide/"
+        target="_blank"
+        class="FirstCard preWorkStudyGuide"
+      >
+        <h3 class="appHeadings">Prework Study guide</h3>
+        <img class="appImg" src="./images/PreWorkImg.png" />
+        <figcaption>
+          First deployment where I compiled my first weeks worth of notes. Used
+          basic CSS and JavaScript to add some features
+        </figcaption>
+      </a>
+
+      <div class="secCards">
+        <a
+          href="https://hans-doderlein.github.io/Horiseon-search-enigne-optimization/"
+          target="_blank"
+          class="appCard Horiseon"
+        >
+          <h3 class="appHeadings">Horiseon SEO</h3>
+          <img class="appImg" src="./images/HoriseonImg.png" />
+          <figcaption>
+            Horiseon search engine optimaization webpage. Used this to practice
+            styling, creating links, and box-model properties.
+          </figcaption>
+        </a>
+
+        <a href="" target="_blank" class="appCard">
+          <h3 class="appHeadings">Currently developing</h3>
+          <img class="appImg" src="./images/ComingSoonImg.jfif" alt="" />
+          <figcaption>More WebApps to come!!!</figcaption>
+        </a>
+
+        <a href="" target="_blank" class="appCard">
+          <h3 class="appHeadings">Currently developing</h3>
+          <img class="appImg" src="./images/ComingSoonImg.jfif" />
+          <figcaption>More WebApps to come!!!</figcaption>
+        </a>
+      </div>
+    </main>
+
+    <!-- small conact sections at bottom of page -->
+
+    <section class="contactSection" id="contactSection">
+      <h3>Contact Info:</h3>
+      <div>Number: 123-456-7890</div>
+      <div>Email: something@somewhere.com</div>
+      <a href="https://github.com/Hans-Doderlein" target="_blank"
+        >Github Repo</a
+      >
+    </section>
+  </body>
+</html>
