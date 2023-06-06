@@ -1,0 +1,386 @@
+/* Reset styling done by browser */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* added variables for commonly used colors */
+:root {
+  --pc: rgb(209, 7, 209);
+  --tc: aquamarine;
+  --gc: grey;
+}
+
+/* Changed stylization on highlight feature */
+::selection {
+  background-color: rgb(205, 167, 43);
+  color: rgb(4, 16, 140);
+
+  /* stylize and fix the header to the top of the page */
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-image: linear-gradient(rgb(53, 180, 159) 0%, aquamarine 100%);
+  padding: 5px 5px;
+  display: flex;
+  flex-wrap: nowrap;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+
+  /* colored the header */
+}
+
+header h1 {
+  color: var(--pc);
+}
+
+header nav {
+  margin-right: 20px;
+  margin-top: 6px;
+}
+
+/* grew the navbar so it taes up all available space */
+
+.navbar {
+  flex-grow: 1;
+}
+
+/* stylization of navbar links */
+
+.navbar-links li {
+  margin-left: 1rem;
+  border: 2px solid var(--pc);
+  font-size: 1.5rem;
+  background-color: var(--gc);
+  border-radius: 10px;
+  list-style: none;
+}
+
+/* Turn navbar into a flex box for use with media resizing */
+
+.navbar-links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-links li a {
+  color: var(--tc);
+  text-decoration: none;
+  margin: 4px 4px;
+}
+
+/* On hover, change the background color, round the link borders */
+
+.navbar-links li:hover {
+  background-color: var(--pc);
+  border-radius: 10px;
+  border: 2px solid var(--tc);
+}
+
+/* On hover, change the link colors  */
+
+.navbar-links li:hover a {
+  color: aquamarine;
+}
+
+/* Turn about me section into a flex box, stylizing the background and adjust lineheight and spacing  */
+
+.about-me {
+  padding: 150px 0 150px 0;
+  background-image: linear-gradient(black 0%, grey 100%);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  line-height: 1.7rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Color and size the header for the about me section  */
+
+.about-me h2 {
+  color: var(--pc);
+  flex-basis: 15%;
+  font-size: 2rem;
+}
+
+/* on hover, add a shadow effect to the header  */
+
+.about-me h2:hover {
+  text-shadow: 0 0 1rem var(--tc);
+}
+
+/* stylize text and container for personal info */
+
+.about-me .aboutMeContent {
+  color: aquamarine;
+  padding: 10px 10px;
+  border: 3px solid transparent;
+  border-left: 3px solid var(--pc);
+  flex-direction: column;
+  flex-basis: 35%;
+  border-radius: 5px;
+}
+
+/* added border to personal image */
+
+.profileimg img {
+  height: 100%;
+  width: 100%;
+  border: 3px solid var(--pc);
+}
+
+.profileimg {
+  flex-basis: 35%;
+  margin-right: 10px;
+}
+
+/* On hover, border chagnes color and a glow effect is added */
+
+.profileimg img:hover {
+  border: 3px solid var(--tc);
+  box-shadow: 0 0 1rem var(--tc);
+}
+
+/* When hovering over the personal info, border on all sides  */
+
+.aboutMeContent:hover {
+  box-shadow: 0 0 1rem var(--pc);
+  border: 3px solid var(--pc);
+}
+
+/* stylize the app container, make it a fex display */
+
+.myApps {
+  border-top: 10px solid var(--pc);
+  color: var(--tc);
+  padding: 100px 10px;
+  background-image: linear-gradient(grey 0%, black 100%);
+  display: flex;
+  flex-direction: column;
+}
+
+/* stylize and color application header */
+
+.myApps h2 {
+  text-align: center;
+  color: var(--tc);
+  text-decoration: underline;
+  font-size: 2rem;
+}
+
+/* On hover, adds shadow to header */
+
+.myApps h2:hover {
+  text-shadow: 0 0 1.2rem var(--pc);
+}
+
+.appHeadings {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* stlyize and turn individual appcards into flexboxes  */
+
+.appCard {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid transparent;
+  border-left: 5px solid var(--pc);
+  border-right: 5px solid var(--pc);
+  flex-basis: 30%;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  text-decoration: none;
+  color: var(--tc);
+}
+
+/* stylize first app so that it is larger than the rest */
+
+.FirstCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid transparent;
+  border-left: 5px solid var(--pc);
+  border-right: 5px solid var(--pc);
+  margin: 15px;
+  padding: 10px;
+  text-decoration: none;
+  color: var(--tc);
+}
+
+/* Added hover stylization to deployed appcards */
+
+.FirstCard:hover,
+.appCard:hover {
+  border: 5px solid var(--pc);
+  box-shadow: 0 0 3rem var(--pc);
+}
+
+/* stylization on images */
+
+.FirstCard img,
+.appCard img {
+  max-width: 70%;
+  margin-top: 10px;
+  border: 3px solid var(--tc);
+  padding: 0;
+  border-radius: 10px;
+}
+
+/* turn secondary cards into a flex container and space them */
+
+.secCards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 10px;
+  justify-content: space-around;
+}
+
+figcaption {
+  padding: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* stylization, soacing, and flex box on contact section at bottom of page */
+
+.contactSection {
+  background-image: linear-gradient(black 0%, rgb(71, 70, 70) 100%);
+  color: var(--tc);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem 0;
+  border-top: 5px solid var(--pc);
+}
+
+/* Remove any stylization set by HTML, added underline and selected color */
+
+.contactSection a {
+  text-decoration: none;
+  list-style: none;
+  color: var(--tc);
+  text-decoration: underline;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+}
+
+.contactSection h3,
+.contactSection div {
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+}
+
+/* Hover effect on all of contact sections */
+
+.contactSection > *:hover {
+  color: var(--pc);
+  border-left: 3px solid var(--tc);
+  border-right: 3px solid var(--tc);
+}
+
+/* Changes stlyization when on tablet size */
+
+@media screen and (max-width: 926px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-me {
+    flex-direction: column;
+  }
+  .about-me h2 {
+    padding-bottom: 20px;
+  }
+
+  .about-me .aboutMeContent {
+    border-left-color: transparent;
+    border-top-color: var(--tc);
+    order: 2;
+  }
+
+  .about-me .aboutMeContent:hover {
+    box-shadow: 0 0 1rem var(--tc);
+    border-color: var(--tc);
+  }
+}
+
+/* changes to stylization when on smartphone */
+
+@media screen and (max-width: 500px) {
+  header {
+    flex-direction: column;
+    align-items: initial;
+  }
+
+  header nav {
+    margin-right: 0;
+  }
+
+  header h1 {
+    text-align: center;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    margin: 0 0 1rem 0;
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+
+  header {
+    position: static;
+  }
+
+  .about-me {
+    padding-top: 30px;
+  }
+
+  .secCards {
+    flex-direction: column;
+    margin: 15px;
+    min-height: 400px;
+  }
+
+  .appCard {
+    margin: 20px 0;
+    min-height: 300px;
+  }
+
+  .contactSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactSection h3 {
+    margin-bottom: 10px;
+  }
+
+  .contactSection div {
+    padding: 10px;
+  }
+
+  .contactSection a {
+    margin-top: 10px;
+  }
+}
