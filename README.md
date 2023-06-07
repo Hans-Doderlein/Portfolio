@@ -1,7 +1,6 @@
 # Portfolio
 
-## Link: https://hans-doderlein.github.io/Portfolio/
-
+## Link: https://hans-doderlein.github.io/Portfolio/ 
 ## Description
 
 The main purpose of this site is to showcase my deployed sites.
